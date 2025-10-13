@@ -1,0 +1,127 @@
+/* category.css */
+
+/* Container */
+.category-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.category-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Form */
+.form {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.form input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.form input:focus {
+  border-color: #007bff;
+}
+
+.form button {
+  padding: 10px 18px;
+  border: none;
+  background: #007bff;
+  color: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.form button:hover {
+  background: #0056b3;
+}
+
+/* Table */
+.category-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.category-container th,
+.category-container td {
+  padding: 12px 14px;
+  border: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.category-container th {
+  background: #007bff;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.category-container tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.category-container tr:hover {
+  background: #f1f7ff;
+}
+
+/* Action Buttons */
+.edit-btn,
+.delete-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-right: 6px;
+  font-weight: 500;
+  transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+.edit-btn {
+  background: #ffc107;
+  color: #fff;
+}
+
+.edit-btn:hover {
+  background: #e0a800;
+  transform: scale(1.05);
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background: #a71d2a;
+  transform: scale(1.05);
+}
+
+/* Empty State */
+.category-container td[colspan="4"] {
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  color: #666;
+}

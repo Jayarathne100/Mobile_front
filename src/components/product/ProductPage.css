@@ -1,0 +1,128 @@
+/* ===== Product Page Container ===== */
+.product-page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product-page h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 28px;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* ===== Product Form ===== */
+.product-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.product-form input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.2s ease-in-out;
+}
+
+.product-form input:focus {
+  border-color: #3498db;
+  box-shadow: 0px 0px 6px rgba(52, 152, 219, 0.3);
+}
+
+.product-form button {
+  grid-column: span 2;
+  padding: 12px;
+  background: #3498db;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.product-form button:hover {
+  background: #2980b9;
+}
+
+/* ===== Product Table ===== */
+.product-table {
+  background-color: #2980b9;
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 3px 10px #a6151514;
+}
+
+.product-table th {
+  background-color: #2980b9;
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.product-table td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.product-table thead {
+  background-color: #2980b9;
+  color: #fff;
+  font-size: 16px;
+}
+
+.product-table tbody tr {
+  background: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  transition: background 0.2s ease-in-out;
+}
+
+.product-table tbody tr:hover {
+  background: #eef6fc;
+}
+
+.product-table td {
+  font-size: 15px;
+  color: #2c3e50;
+}
+
+/* ===== Action Buttons ===== */
+.product-table button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.product-table button:first-child {
+  background: #f39c12;
+  color: #fff;
+}
+
+.product-table button:first-child:hover {
+  background: #d68910;
+}
+
+.product-table button:last-child {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.product-table button:last-child:hover {
+  background: #c0392b;
+}
