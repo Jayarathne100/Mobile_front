@@ -1,0 +1,151 @@
+/* StockPage.css */
+
+.stock-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.stock-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.stock-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+  justify-content: center;
+}
+
+.stock-form input,
+.stock-form select {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 180px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.stock-form input:focus,
+.stock-form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.stock-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.stock-form button:hover {
+  background-color: #0056b3;
+}
+
+.stock-form button[type="button"] {
+  background-color: #6c757d;
+}
+
+.stock-form button[type="button"]:hover {
+  background-color: #5a6268;
+}
+
+/* StockTable.css */
+
+.stock-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stock-table th,
+.stock-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.stock-table th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.stock-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.stock-table tr:hover {
+  background-color: #eef6ff;
+}
+
+/* No Stock Row */
+.stock-table td[colspan="8"] {
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  color: #777;
+}
+
+/* Buttons */
+.stock-table button {
+  padding: 6px 12px;
+  margin: 0 4px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.stock-table button:first-child {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.stock-table button:first-child:hover {
+  background-color: #e0a800;
+}
+
+.stock-table button:last-child {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.stock-table button:last-child:hover {
+  background-color: #c82333;
+}
+
+/* Grand Total Row */
+.grand-total-row {
+  background-color: #f1f1f1;
+}
+
+.grand-total-row td {
+  font-size: 1rem;
+  color: #000;
+  padding: 14px 15px;
+  border-top: 2px solid #ccc;
+}
+
